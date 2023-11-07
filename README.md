@@ -15,7 +15,7 @@ Avant d'utiliser le script, assurez-vous d'avoir Python installé sur votre ordi
 3. Cochez la case "Add Python to PATH" lors de l'installation pour faciliter l'accès à Python.
 4. Suivez les instructions pour terminer l'installation.
 
-## Configuration du Script
+## Installation du Script
 
 1. Extrayez le contenu du fichier ZIP que vous avez téléchargé.
 2. Placez le fichier texte que vous souhaitez mettre en page dans le même répertoire que le script Python.
