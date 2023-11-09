@@ -8,7 +8,9 @@ Ce guide vous expliquera comment télécharger, configurer et utiliser le script
 
 ## Prérequis
 
-Avant d'utiliser le script, assurez-vous d'avoir Python installé sur votre ordinateur. Si ce n'est pas le cas, suivez ces étapes :
+Avant d'utiliser le script, assurez-vous d'avoir Python installé sur votre ordinateur.
+Normalement, si vous utilisez une distribution linux, Python est déjà installé dans votre système.
+Si ce n'est pas le cas, suivez ces étapes :
 
 1. Téléchargez Python depuis le site officiel : [python.org/downloads](https://www.python.org/downloads/).
 2. Lancez l'installateur Python téléchargé.
@@ -18,7 +20,7 @@ Avant d'utiliser le script, assurez-vous d'avoir Python installé sur votre ordi
 ## Installation du Script
 
 1. Extrayez le contenu du fichier ZIP que vous avez téléchargé.
-2. Placez le fichier texte que vous souhaitez mettre en page dans le même répertoire que le script Python.
+2. Placez le rapport d'espionnage dans un fichier texte nommé  ```rapport.txt``` dans le même répertoire que le script Python.
 
 ## Utilisation du Script
 
@@ -35,10 +37,15 @@ Avant d'utiliser le script, assurez-vous d'avoir Python installé sur votre ordi
    ```
    python miseEnPageSpy.py
    ```
+   ou
+   ```
+   python3 miseEnPageSpy.py
+   ```
+   Si vous utilisez une distribution linux.
 
-4. Le script parcourra le rapport d'espionnage, appliquera la mise en page selon les conditions spécifiées et créera un fichier de sortie par défaut appelé "rapport_mis_en_page.txt".
+5. Le script parcourra le rapport d'espionnage, appliquera la mise en page et créera un fichier de sortie par défaut appelé "rapport_mis_en_page.txt".
 
-5. Ouvrez le fichier de sortie "rapport_mis_en_page.txt" et copiez-collez son contenu dans Apo.
+6. Ouvrez le fichier de sortie "rapport_mis_en_page.txt" et copiez-collez son contenu dans Apo.
 
 ## Licence
 
