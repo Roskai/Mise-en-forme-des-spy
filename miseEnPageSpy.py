@@ -39,7 +39,7 @@ try:
     with open(nom_fichier, "r") as fichier:
         with open(nom_fichier_ecriture, "w") as file_out:
             for ligne in fichier:
-                if "Système 20." in ligne:
+                if "Système" in ligne or "Secteur" in ligne :
                     formatted_line = f"\n[b][color={couleur_titre}]{ligne.strip()}[/color][/b]\n"
                 else:
                     # Parcourir la liste des unités offensives
@@ -55,7 +55,6 @@ try:
 
                     # Vérifier les unités militaires spécifiques
                     if "escadres kamikazes" in ligne or "chasseurs Arks" in ligne:
-                        # Appliquer la mise en page en couleur violette (#F551FF)
                         formatted_line = f"[color={couleur_speciaux}]{ligne.strip()}[/color]\n"
                     else:
                         # Aucune mise en page spécifique, conserver la ligne telle quelle
@@ -63,6 +62,6 @@ try:
                 # Écrire la ligne formatée dans le fichier de sortie
                 file_out.write(formatted_line )
 except FileNotFoundError:
-    print(f"Le fichier d'entrée'{nom_fichier}' n'existe pas.")
+    print(f"Le fichier d'entrée'{nom_fichier}' n'existe pas. N'oubliez pas de créer le fichier '{nom_fichier}' au même endroit que le script avec le contenu du rapport d'espionnage")
 except Exception as e:
     print(f"Une erreur s'est produite : {str(e)}")
